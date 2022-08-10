@@ -22,6 +22,7 @@
 		D22AEE96289F2AE70066B377 /* NasaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D22AEE95289F2AE70066B377 /* NasaTableViewCell.m */; };
 		D2831E8B289FECC300474881 /* DetailVc.m in Sources */ = {isa = PBXBuildFile; fileRef = D2831E8A289FECC300474881 /* DetailVc.m */; };
 		D2831E8F289FFF4300474881 /* NasaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2831E8E289FFF4300474881 /* NasaViewModel.swift */; };
+		D2831E9228A197A500474881 /* Nasa_imagesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2831E9128A197A500474881 /* Nasa_imagesTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		D2831E8A289FECC300474881 /* DetailVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailVc.m; sourceTree = "<group>"; };
 		D2831E8D289FFF4300474881 /* Nasa_images-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nasa_images-Bridging-Header.h"; sourceTree = "<group>"; };
 		D2831E8E289FFF4300474881 /* NasaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaViewModel.swift; sourceTree = "<group>"; };
+		D2831E9028A197A500474881 /* Nasa_imagesTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nasa_imagesTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		D2831E9128A197A500474881 /* Nasa_imagesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nasa_imagesTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				D22AEE6F289EED8E0066B377 /* Nasa_imagesTests.m */,
+				D2831E9128A197A500474881 /* Nasa_imagesTests.swift */,
+				D2831E9028A197A500474881 /* Nasa_imagesTests-Bridging-Header.h */,
 			);
 			path = Nasa_imagesTests;
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 					};
 					D22AEE6A289EED8E0066B377 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 						TestTargetID = D22AEE4F289EED8D0066B377;
 					};
 					D22AEE74289EED8E0066B377 = {
@@ -348,6 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2831E9228A197A500474881 /* Nasa_imagesTests.swift in Sources */,
 				D22AEE70289EED8E0066B377 /* Nasa_imagesTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -570,14 +577,23 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "FirstPoke.Nasa-imagesTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "Nasa_imagesTests/Nasa_imagesTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nasa_images.app/Nasa_images";
 			};
@@ -588,14 +604,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "FirstPoke.Nasa-imagesTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "Nasa_imagesTests/Nasa_imagesTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nasa_images.app/Nasa_images";
 			};

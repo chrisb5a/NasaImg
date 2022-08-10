@@ -48,7 +48,7 @@
     
     //For pagination we can take date=**********&end_date=********** in urlString and truncate
     //Create an array for containing the date and end_date that will correspond to each page
-    // at prefect and we can query the dates corresponding to each page
+    // at prefect and we can query the data corresponding to each page
     
     
     
